@@ -2,14 +2,6 @@
 import numpy as np
 import pandas as pd
 # from sklearn import cluster
-""" 
-!RM'd tabnine keyBind 
-{
-  "key": "tab",
-  "command": "tabnine.accept-inline-suggestion",
-  "when": "tabnine.in-inline-suggestions && tabnine.inline-suggestion:enabled || tabnine.in-inline-suggestions && tabnine.snippet-suggestion:enabled"
-}
-"""
 
 def randomClusterInit(X, rowNum, clusterNum):
     return X[np.random.choice(rowNum, size=clusterNum, replace=False)]
